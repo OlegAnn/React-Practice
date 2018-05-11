@@ -24,7 +24,7 @@ class App extends Component {
               <Route path="/albums" component={Albums} />
               <Route path="/todos" component={Todos} />
               <Route path="/comments" component={Comments} />
-              <Route path="/posts/:id" component={PostSingle} />
+              <Route path="/url/:id" component={PostSingle} />
       </div>
     );
   }
