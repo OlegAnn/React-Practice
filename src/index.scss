@@ -1,0 +1,41 @@
+h1{
+  &:hover{
+    color: orangered;
+  }
+}
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.uk-card-header, .uk-card-body {
+  min-height: 6.9rem;
+  text-align: center;
+}
+
+.uk-card-body{
+  color: black;
+}
+
+.uk-card-footer {
+  text-align: center;
+}
+
+h2{
+  transition: padding-left 2s ease, letter-spacing 3s ease;
+  &:hover{
+    padding-left: 2rem;
+    letter-spacing: 1rem;
+    cursor: default;
+  }
+}
+
+.yes{
+  background: green;
+}
+
+.no{
+  background: orangered;
+}

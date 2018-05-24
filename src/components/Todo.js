@@ -6,7 +6,7 @@ export default function Todo({todo}) {
             <div className="uk-card-header">
                 <h3 className="uk-card-title uk-margin-remove-bottom">{todo.title}</h3>
             </div>
-            <div className="uk-card-body">
+            <div className={"uk-card-body " + (todo.completed ? 'yes' : 'no')}>
                 <p>Task completed: {todo.completed ? 'yes' : 'no'}</p>
             </div>
             <div className="uk-card-footer">
