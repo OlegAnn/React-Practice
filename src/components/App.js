@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 import Navbar from './Navbar'
-import Posts from './Posts'
-import Albums from './Albums'
+import Posts from '../postComponents/Posts'
+import Albums from '../albumComponents/Albums'
 import Comments from './Comments'
-import Users from './Users'
+import Users from '../userComponents/Users'
 import Todos from './Todos'
 import Photos from './Photos'
 import Pagination from './Pagination'
