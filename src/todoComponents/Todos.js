@@ -1,16 +1,16 @@
 import React, {Component} from 'react'
-import AlbumList from './AlbumList'
-import albums from '../data/albums'
+import TodosList from './TodosList'
+import todos from '../data/todos'
 
-export default class Albums extends Component{
+export default class Todos extends Component{
     render() {
         return (
             <div>
                 <main className="uk-main">
                     <div className="uk-section">
                         <div className="uk-container">
-                            <h2>Albums</h2>
-                            <AlbumList albums={albums}/>
+                            <h2>Todos</h2>
+                            <TodosList todos={todos}/>
                         </div>
                     </div>
                 </main>
