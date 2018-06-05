@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+import { BrowserRouter, Route, Link } from "react-router-dom"
 import Navbar from './Navbar'
 import Posts from '../postComponents/Posts'
 import Albums from '../albumComponents/Albums'
-import Comments from './Comments'
+import Comments from '../commentComponents/Comments'
 import Users from '../userComponents/Users'
-import Todos from './Todos'
-import Photos from './Photos'
+import Todos from '../todoComponents/Todos'
+import Photos from '../photoComponents/Photos'
 import Pagination from './Pagination'
 import PostSingle from './PostSingle'
 
@@ -15,7 +15,8 @@ import PostSingle from './PostSingle'
 class App extends Component {
   render() {
     return (
-      <div className="app">
+        <BrowserRouter>
+          <div className="app">
               <Navbar/>
               <Route exact path="/" component={Posts} />
               <Route path="/posts" component={Posts} />
@@ -25,7 +26,8 @@ class App extends Component {
               <Route path="/todos" component={Todos} />
               <Route path="/comments" component={Comments} />
               <Route path="/url/:id" component={PostSingle} />
-      </div>
+          </div>
+        </BrowserRouter>
     );
   }
 }

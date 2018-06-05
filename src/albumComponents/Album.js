@@ -8,7 +8,7 @@ export default class Album extends Component{
                 <div className="uk-card-header">
                     <h3 className="uk-card-title uk-margin-remove-bottom">{this.props.album.title}</h3>
                 </div>
-                <div className="uk-card-body">
+                <div className="uk-card-body albums_body">
                     <p>id: {this.props.album.id}</p>
                 </div>
                 <div className="uk-card-footer">

@@ -14,7 +14,7 @@ export default class Posts extends Component {
     };
     componentWillMount() {
         this.setState({
-            namePage: 'Posts'
+            namePage: "Posts"
         })
 
     }
@@ -50,6 +50,8 @@ export default class Posts extends Component {
                             <h2>{this.state.namePage}</h2>
                             <PostList data={this.state.posts}/>
                             {/*<Post page={this.state.page}/>*/}
+                            <h1>Page is: №{this.state.page}</h1>
+                            <h2>{this.state.namePage}</h2>
                             <Pagination change={this.changePagination.bind(this)} limit={this.state.limit} page={this.state.page} length={this.state.length}/>
                         </div>
                     </div>
